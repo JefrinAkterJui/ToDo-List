@@ -1,0 +1,84 @@
+/* ------------------common css--------- */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imges/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+}
+/* -------------------- head todo list---------------- */
+.todoHead{
+    width: 300px;
+    height: 48px;
+    padding-left: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Headinput{
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.todoHead button{
+    width: 60px;
+    border: none;
+    background: #D91656;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+/* ---------------------------single todo ---------------------- */
+.singleTodo{
+    width: 350px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+}
+.singleTodo input{
+    width: 199px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+}
+.singleTodo button {
+    width: 61px;
+    height: 30px;
+    background: #D91656;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.error{
+    color: rgb(12, 11, 11);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
