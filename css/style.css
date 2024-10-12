@@ -75,6 +75,10 @@ body{
     font-size: 12px;
     font-weight: 400;
     color: #ffffff;
+    transition: all linear .3s;
+}
+.singleTodo button:active{
+    transform: scale(1.1);
 }
 .error{
     color: rgb(12, 11, 11);
