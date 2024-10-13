@@ -8,7 +8,7 @@ let Headbutton           =document.querySelector('.Headbutton')
 let error                =document.querySelector('.error')
 let todoList             =document.querySelector('.todoList')
 // ------------------function part-------------
-Headbutton.addEventListener('click' , ()=>{
+let inputclick =()=>{
     if(Headinput.value==''){
         error.innerHTML="Please enter any text"
         
@@ -42,8 +42,23 @@ Headbutton.addEventListener('click' , ()=>{
         removeButton.addEventListener('click' , ()=>{
             singleTodo.remove()
         })
+        // -----------------edit data---------------------
         editButton.addEventListener('click' , ()=>{
-            input.removeAttribute('readonly')
+            if(editButton.innerHTML=='Edit'){
+                editButton.innerHTML='Save'
+                editButton.style="color:white"
+                input.removeAttribute('readonly', 'readonly');
+            }
+            else{
+                editButton.innerHTML='Edit'
+                input.setAttribute('readonly', 'readonly');
+            }
         })
     }
-})
+}
+// ------------------Enter key function -------------
+let inputkey =(item)=>{
+    if(item.key=='Enter'){
+        inputclick()
+    }
+}

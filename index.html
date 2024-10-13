@@ -11,8 +11,8 @@
 <body>
     <div class="error"></div>
     <div class="todoHead">
-        <input type="text" class="Headinput" placeholder="Enter your text..">
-        <button class="Headbutton">Add</button>
+        <input onkeydown="inputkey(event)" type="text" class="Headinput" placeholder="Enter your text..">
+        <button onclick="inputclick()" class="Headbutton">Add</button>
     </div>
     <div class="todoList">
         <!-- <div class="singleTodo">
